@@ -6,6 +6,7 @@ data = pd.read_csv('carter-cash-2.csv')
 
 def pneu_prix():
         st.markdown('<h1 style="color: white ;">Plus de <span style="color: red;">7000</span> références de pneus disponibles chez Carter-Cash</h1>', unsafe_allow_html=True)
+        st.markdown('<h3 style="color: rgb(14, 17, 23);"> Plus de 7000 références de pneus disponibles chez Carter-Cash </h3>', unsafe_allow_html=True)
 
     
 
