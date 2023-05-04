@@ -18,7 +18,7 @@ elif onglet == "analyse des pneu 1":
                'Hauteur', 'Diametre', 'Charge', 'Vitesse', 'Runflat', 'note']
     for column in columns:
         df_filtered = data[(data[column] != "inconnue") & (data[column] != "note inconnue")]
-        fig = px.histogram(df_filtered, x=column, color=column, category_orders={column: sorted(df_filtered[column].unique())})
+        fig = px.histogram(df_filtered, x=column,title=f"Nombres de pneu par {column}", color=column, category_orders={column: sorted(df_filtered[column].unique())})
         st.plotly_chart(fig)
 
 
